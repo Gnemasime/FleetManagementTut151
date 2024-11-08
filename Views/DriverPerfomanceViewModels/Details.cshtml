@@ -1,0 +1,58 @@
+﻿@model FleetManagementTut151.Models.DriverPerfomanceViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DriverPerfomanceViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DriverNAme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DriverNAme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LicenseType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PointsEarned)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PointsEarned)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalEarnings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalEarnings)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryRating)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DriverViewModelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

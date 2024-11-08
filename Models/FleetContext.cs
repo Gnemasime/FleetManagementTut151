@@ -13,5 +13,6 @@ namespace FleetManagementTut151.Models
         public DbSet<Driver> drivers { get; set; }
         public DbSet<Truck> trucks { get; set; }
         public DbSet<Delivery> deliveries { get; set; }
+        public DbSet<DriverPerfomanceViewModel> driverPerfomances { get; set; }
     }
 }
